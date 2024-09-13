@@ -25,3 +25,6 @@ test.data:
 
 test.site: build
 	sh scripts/check_site.sh
+
+local: build
+	bundle exec jekyll serve -H 0.0.0.0 -P 4000
