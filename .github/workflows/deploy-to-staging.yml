@@ -1,10 +1,9 @@
-name: Deploy to stagingt
+name: Deploy to staging
 
 on:
   push:
     branches:
-      - develop
-
+      - master # Change this to develop
 jobs:
   build:
 
@@ -27,7 +26,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
         BRANCH: gh-pages
         FOLDER: _site
         CLEAN: true
