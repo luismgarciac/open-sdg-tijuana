@@ -52,4 +52,6 @@ ENV PATH /opt/anaconda/bin:$PATH
 
 RUN make install
 
+EXPOSE 4000
+
 CMD ["tail", "-f", "/dev/null"]
