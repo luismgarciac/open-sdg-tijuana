@@ -1,0 +1,25 @@
+# Usar una imagen base de Ubuntu
+FROM ubuntu:latest
+
+# Instalar dependencias
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    wget \
+    build-essential \
+    python3 \
+    python3-pip \
+    ruby \
+    ruby-dev \
+    make \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instalar Bundler
+RUN gem install bundler
+
+# Crear un usuario no root y cambiar a ese usuario
+RUN useradd -ms /bin/bash vscode
+USER vscode
+
+# Establecer el directorio de trabajo
+WORKDIR /workspace

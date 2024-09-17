@@ -1,0 +1,15 @@
+{
+  "name": "Local development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.Ruby",
+        "ms-python.python",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}
