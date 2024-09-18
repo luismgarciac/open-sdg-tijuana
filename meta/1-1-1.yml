@@ -67,6 +67,7 @@ UNIT_MEASURE: >-
 CLASS_SYSTEM: >-
 
 SOURCE_TYPE: >-
+ [Coneval](https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx)
 
 COLL_METHOD: >-
 
@@ -75,6 +76,7 @@ FREQ_COLL: >-
 REL_CAL_POLICY: >-
 
 DATA_SOURCE: >-
+ [Coneval](https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx)
 
 COMPILING_ORG: >-
 

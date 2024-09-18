@@ -22,8 +22,8 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Tijuana
+  adjective: Tijuana
 create_goals:
   previous_next_links: false
   goals: []
@@ -76,22 +76,23 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
+  - title: IMPLAN
     content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
+      El Instituto Metropolitano de Planeación 
+      forma parte de la Acción Conjunta para el Desarrollo Sostenible,
+      una plataforma abierta a todos los que apuestan por una sociedad sostenible..
     include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
+    button_label: Más información
+    button_link: 'https://implan.tijuana.gob.mx'
     rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
+  # - title: Nam vestibulum
+  #   content: |
+  #     Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
+  #     interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
+  #   include: ''
+  #   button_label: Read more
+  #   button_link: 'https://example.com'
+  #   rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
   description: frontpage.instructions_short
@@ -126,20 +127,20 @@ indicator_metadata_form:
   dropdowns: []
   repository_link: /tree/develop/meta
   translation_link: ''
-  language: ''
+  language: 'es'
   scopes:
     - national
     - global
   exclude_fields: []
   translated: false
 indicator_tabs:
-  tab_1: ''
-  tab_2: ''
-  tab_3: ''
-  tab_4: ''
+  tab_1: chart
+  tab_2: table
+  tab_3: map
+  tab_4: embed
 languages:
-  - en
   - es
+  - en
 languages_public: []
 logos: []
 map_layers: []
