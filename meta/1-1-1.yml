@@ -8,26 +8,37 @@ SDG_INDICATOR: >-
   international poverty line by sex, age, employment status and geographic
   location (urban/rural)
 SDG_SERIES_DESCR: >-
+ SDG_SERIES_DESCR1
 
 META_LAST_UPDATE: >-
+ META_LAST_UPDATE1
 
 SDG_RELATED_INDICATORS: >-
+ SDG_RELATED_INDICATORS1
 
 SDG_CUSTODIAN_AGENCIES: >-
+ SDG_CUSTODIAN_AGENCIES1
 
 CONTACT_ORGANISATION: >-
+ CONTACT_ORGANISATION1
 
 CONTACT_NAME: >-
+ CONTACT_NAME1
 
 ORGANISATION_UNIT: >-
+ ORGANISATION_UNIT1
 
 CONTACT_FUNCT: >-
+ CONTACT_FUNCT1
 
 CONTACT_PHONE: >-
+ CONTACT_PHONE1
 
 CONTACT_MAIL: >-
+ CONTACT_MAIL1
 
 CONTACT_EMAIL: >-
+ CONTACT_EMAIL1
 
 STAT_CONC_DEF: >- 
   ## Definition:
@@ -63,49 +74,70 @@ STAT_CONC_DEF: >-
   households that are classified as poor, that is, that have income or
   consumption levels below the poverty line used for measurement.
 UNIT_MEASURE: >-
+ UNIT_MEASURE1
 
 CLASS_SYSTEM: >-
+ CLASS_SYSTEM1
 
 SOURCE_TYPE: >-
  [Coneval](https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx)
 
 COLL_METHOD: >-
+ COLL_METHOD1
 
 FREQ_COLL: >-
+ FREQ_COLL1
 
 REL_CAL_POLICY: >-
+ REL_CAL_POLICY1
 
 DATA_SOURCE: >-
  [Coneval](https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx)
 
 COMPILING_ORG: >-
+ COMPILING_ORG1
 
 INST_MANDATE: >-
+ INST_MANDATE1
 
 RATIONALE: >-
+ RATIONALE1
 
 REC_USE_LIM: >-
+ REC_USE_LIM1
 
 DATA_COMP: >-
+ DATA_COMP1
 
 DATA_VALIDATION: >-
+ DATA_VALIDATION1
 
 ADJUSTMENT: >-
+ ADJUSTMENT1
 
 IMPUTATION: >-
+ IMPUTATION1
 
 REG_AGG: >-
+ REG_AGG1
 
 DOC_METHOD: >-
+ DOC_METHOD1
 
 QUALITY_MGMNT: >-
+ QUALITY_MGMNT1
 
 QUALITY_ASSURE: >-
+ QUALITY_ASSURE1
 
 QUALITY_ASSMNT: >-
+ QUALITY_ASSMNT1
 
-COVERAGE: >-
+COVERAGE: >- 
+ COVERAGE1
 
 COMPARABILITY: >-
+ COMPARABILITY1
 
 OTHER_DOC: >-
+ OTHER_DOC1

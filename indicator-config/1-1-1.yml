@@ -1,32 +1,32 @@
 ﻿composite_breakdown_label: ''
-computation_units: ''
-copyright: ''
-data_footnote: ''
+computation_units: 'Metric tons' #esta configuración se utiliza para especificar la unidad utilizada en los datos principales del indicador
+copyright: '' #Derechos de autor debajo de la tabla
+data_footnote: '' #por debajo de la grafica
 data_non_statistical: false
-data_notice_class: ''
-data_notice_heading: ''
-data_notice_text: ''
-data_show_map: false
+data_notice_class: '' #esta configuración se puede utilizar para establecer el color de un aviso de datos mediante clases CSS. Options out-of-the-box are: * success (green) * warning (amber) * danger (red)
+data_notice_heading: '' # Titulo Aviso en rojo sobre arriba de los datos
+data_notice_text: '' #Texto del aviso
+data_show_map: true
 data_start_values: []
-embedded_feature_footer: ''
-embedded_feature_html: ''
-embedded_feature_tab_title: ''
-embedded_feature_title: ''
-embedded_feature_url: ''
+embedded_feature_footer: '' #footer de la tabla extra
+embedded_feature_html: '<iframe width="1110" height="700" title="Childhood Vaccination Coverage Statistics" src="https://app.powerbi.com/view?r=eyJrIjoiZTI3NWZhNzItMTIyZS00OWM2LTg0MzMtOGY5YTJjMGY0MjI1IiwidCI6IjUwZjYwNzFmLWJiZmUtNDAxYS04ODAzLTY3Mzc0OGU2MjllMiIsImMiOjh9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>' #html de la tabla extra
+embedded_feature_tab_title: '' #titulo de la pestaña de la tabla extra
+embedded_feature_title: ''  #titulo de la tabla extra
+embedded_feature_url: '' #url de la tabla extra
 expected_disaggregations: []
 graph_annotations: []
 graph_limits: []
-graph_stacked_disaggregation: ''
+graph_stacked_disaggregation: 'graph_stacked_disaggregation'
 graph_title: global_indicators.1-1-1-title
 graph_titles: []
 graph_type: line
 indicator_name: global_indicators.1-1-1-title
 indicator_number: '1.1.1'
-national_geographical_coverage: ''
-page_content: ''
+national_geographical_coverage: 'Tijuana'
+page_content: '' #texto de la página
 permalink: ''
 precision: []
 reporting_status: complete
-sort: ''
+sort: '' #orden de datos
 standalone: false
 tags: []

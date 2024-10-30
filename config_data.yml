@@ -46,9 +46,9 @@ src_dir: ''
 # folder. Further, each item can have any/all of the parameters that class uses.
 # The defaults below show what is used when this is omitted.
 inputs:
-  - class: InputCsvData
-    # This describes the data files, relative to the "src_dir" indicated above.
-    path_pattern: data/*-*.csv
+  # - class: InputCsvData
+  #   # This describes the data files, relative to the "src_dir" indicated above.
+  #   path_pattern: data/*-*.csv  #se elimina en la extraccion del api 
   - class: InputYamlMeta
     path_pattern: indicator-config/*-*.yml
     git: false
@@ -64,8 +64,32 @@ inputs:
     # need to change this setting. It is intended for sites where the data needs
     # to be "built" before being processed by sdg-build.
     git_data_dir: data
-  - class: InputSdmxMeta
-    meta_suffix: __GLOBAL
+  #- class: InputSdmxMeta
+  #  meta_suffix: __GLOBAL
+
+  - class: InputSdmxMl_Structure
+    source: https://nsiws-stable-camstat-live.officialstatistics.org/rest/data/KH_NIS,DF_SDG_KH,1.2/A..............
+    dsd: https://nsiws-stable-camstat-live.officialstatistics.org/rest/dataflow/KH_NIS/DF_SDG_KH/1.2?references=all&detail=referencepartial
+    import_codes: true
+    import_names: true
+    dimension_map:
+      REF_AREA|KH: ''
+    drop_singleton_dimensions: false
+    drop_dimensions:
+      - NATURE
+      - OBS_STATUS
+      - REPORTING_TYPE
+      - SOURCE_DETAIL
+      - TIME_DETAIL
+      - UNIT_MULT
+      - FREQ
+    indicator_id_map:
+      N_KH_030101_01: '3-1-1-1' 
+    indicator_id_xpath: .//Name[@lang='en']
+    indicator_name_xpath: .//Name[@lang='en']
+    request_params:
+      headers:
+        User-Agent: Mozilla
 
 # Translations
 # ------------
@@ -99,12 +123,25 @@ reporting_status_extra_fields: []
 # below and adjust if you would like to use the Open SDG mapping functionality.
 # Note that the GeoJSON files can either be remote (as in the example below) or
 # local, relative to the src_dir specified above.
-#map_layers:
-#  - geojson_file: https://geoportal1-ons.opendata.arcgis.com/datasets/4fcca2a47fed4bfaa1793015a18537ac_4.geojson
-#    name_property: rgn17nm
-#    id_property: rgn17cd
-#    output_subfolder: regions
-#    filename_prefix: indicator_
+map_layers:
+#Country (https://geoportal.statistics.gov.uk/datasets/countries-december-2019-boundaries-uk-buc)
+  - geojson_file: https://geoportal.statistics.gov.uk/datasets/e91dce8fd0f74a6a8ab1e61b3528deb5_0.geojson
+    name_property: ctry19nm
+    id_property: ctry19cd
+    output_subfolder: country
+    filename_prefix: indicator_
+#Region (link: https://hub.arcgis.com/datasets/4fcca2a47fed4bfaa1793015a18537ac_4)
+  - geojson_file: https://geoportal.statistics.gov.uk/datasets/5c945b8197394489ab1a743ab0064ec6_0.geojson
+    name_property: rgn17nm
+    id_property: rgn17cd
+    output_subfolder: regions
+    filename_prefix: indicator_
+#Local Authority (link: https://hub.arcgis.com/datasets/686603e943f948acaa13fb5d2b0f1275_4)
+  - geojson_file: https://geoportal.statistics.gov.uk/datasets/e462c8a5e18e4f99a4eb36e03eb11c36_0.geojson
+    name_property: lad16nm
+    id_property: lad16cd
+    output_subfolder: local_authorities
+    filename_prefix: indicator_
 
 # Documentation settings
 # ----------------------
